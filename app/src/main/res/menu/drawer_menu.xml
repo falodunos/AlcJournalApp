@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single" android:id="@+id/grp1">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/mnuHome"
+            android:icon="@mipmap/home"/>
+
+        <item
+            android:id="@+id/nav_add_note"
+            android:title="@string/mnuAddNote"
+            android:icon="@mipmap/add_note"/>
+
+        <item
+            android:id="@+id/nav_list_notes"
+            android:title="@string/mnuAllNotes"
+            android:icon="@mipmap/list"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:title="@string/action_settings"
+            android:icon="@mipmap/settings"/>
+    </group>
+
+    <group android:id="@+id/grp2">
+        <item
+            android:id="@+id/nav_logout"
+            android:title="@string/mnuLogout"
+            android:icon="@mipmap/logout"/>
+    </group>
+</menu>
