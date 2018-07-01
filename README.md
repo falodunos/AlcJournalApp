@@ -13,6 +13,7 @@ AlcJournalApp is an helper app to helper its users pen down his/her ideas and fe
 - Delete - user can also delete an existing note ...
 # NOTE:
 - To delete an existing note, swipe the note either left or right, and the operation is successful.
+- APK is located in project root directory, in a subfolder called "Find APK Here".
 
 
 
