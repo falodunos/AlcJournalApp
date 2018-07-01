@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Journal APPgit "
+        android:text="Journal APP"
         android:paddingTop="8dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
