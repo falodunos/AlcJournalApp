@@ -18,6 +18,6 @@ public class AddNoteViewModelFactory extends ViewModelProvider.NewInstanceFactor
     @NonNull
     @Override
     public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
-        return super.create(modelClass);
+        return (T) new AddNoteViewModel(mDb, mNoteId);
     }
 }

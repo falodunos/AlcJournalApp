@@ -74,7 +74,7 @@ public class AddNoteActivity extends AppCompatActivity implements View.OnClickLi
                 mNoteId = intent.getIntExtra(EXTRA_NOTE_ID, DEFAULT_NOTE_ID);
 
                 AddNoteViewModelFactory factory = new AddNoteViewModelFactory(mDb, mNoteId);
-                final AddNoteViewModel noteViewModel = ViewModelProviders.of(this).get(AddNoteViewModel.class);
+                final AddNoteViewModel noteViewModel = ViewModelProviders.of(this, factory).get(AddNoteViewModel.class);
 
                 noteViewModel.getNote().observe(this, new Observer<NoteEntry>() {
                     @Override
@@ -165,7 +165,7 @@ public class AddNoteActivity extends AppCompatActivity implements View.OnClickLi
                         mDb.noteDao().insertNote(noteEntry);
                     } else {
                         noteEntry.setId(mNoteId);
-                        mDb.noteDao().updatenote(noteEntry);
+                        mDb.noteDao().updateNote(noteEntry);
                     }
                     initIntent(getApplicationContext(), NotesActivity.class);
                 }

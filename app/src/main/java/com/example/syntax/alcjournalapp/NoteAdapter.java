@@ -4,6 +4,7 @@ package com.example.syntax.alcjournalapp;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -147,6 +148,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder
 //            createdAt = (TextView) itemView.findViewById(R.id.textViewCreatedAt);
             updatedAt = (TextView) itemView.findViewById(R.id.updatedAt);
 
+            Log.d(TAG, "got here ...");
             itemView.setOnClickListener(this);
         }
 

@@ -19,7 +19,7 @@ public interface NoteDao {
     void insertNote(NoteEntry noteEntry);
 
     @Update(onConflict = OnConflictStrategy.REPLACE)
-    void updatenote(NoteEntry noteEntry);
+    void updateNote(NoteEntry noteEntry);
 
     @Delete
     void deleteNote(NoteEntry noteEntry);
