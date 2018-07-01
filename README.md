@@ -1,4 +1,4 @@
-# AlcJournalApp
+# Journal App
 
 Android Developer Track (#7DaysofCodeChallenge)
 
